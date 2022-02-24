@@ -1,5 +1,6 @@
 // Copyright 2022 NNTU-CS
 #include "alg.h"
+using namespace std;
 
 int main() {
     int res1 = checkPrime(17);
