@@ -13,20 +13,20 @@ bool checkPrime(uint64_t value) {
 			}
 		}
 	}
-	if (f == true) {
-	    return f;
-	    break;
-	}
 	return f;
 }
 
 uint64_t nPrime(uint64_t n) {
     int i = n;
-	if (checkPrime(i) == 1) {
-	    return i;
-	    break;
+    int f = 1;
+    int cou = 0;
+	while (cou != i) {
+	    f++;
+		if (checkPrime(f) == 1) {
+		    cou++;
+		}
 	}
-    return i;
+    return f;
 }
 
 uint64_t nextPrime(uint64_t value) {
