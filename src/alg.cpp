@@ -9,17 +9,17 @@ int checkPrime(uint64_t value) {
     while (cou != value) {
         boolean f = false;
 	for (int z = 1; z != i+1; z++) {
-		if (z != 1 && z != i) {
-			if (i % z == 0) {
-			    	f = true;
-			    	break;
-			}
+	    if (z != 1 && z != i) {
+		if (i % z == 0) {
+		    f = true;
+		    break;
 		}
+	    }
 	}
 	if (f == false) {
-	    	cou++;
+	    cou++;
 	}
-	i++;
+	    i++;
     }
     return i-1;
 }
