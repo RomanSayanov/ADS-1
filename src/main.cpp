@@ -7,4 +7,5 @@ int main() {
     int res3 = nextPrime(18);
     int res4 = sumPrime(18);
     cout << res1 << "-check " << res2 << "-n " << res3 << "-next " << res4 << "-sum " << endl;
+    return 0;
 }
