@@ -1,20 +1,25 @@
-// Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
+#include <iostream>
+using namespace std;
 
-
-bool checkPrime(uint64_t value) {
-// вставьте код функции
-}
-
-uint64_t nPrime(uint64_t n) {
-// вставьте код функции
-}
-
-uint64_t nextPrime(uint64_t value) {
-// вставьте код функции
-}
-
-uint64_t sumPrime(uint64_t hbound) {
-// вставьте код функции
+int checkPrime(uint64_t value) {
+	int cou = 0;
+	int i = 2;
+	while (cou != value) {
+		boolean f = false;
+		for (int z = 1; z != i+1; z++) {
+			if (z != 1 && z != i) {
+				if (i % z == 0) {
+					f = true;
+					break;
+				}
+			}
+		}
+		if (f == false) {
+			cou++;
+		}
+		i++;
+	}
+	return i-1;
 }
