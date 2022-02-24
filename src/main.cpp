@@ -2,5 +2,6 @@
 #include "alg.h"
 
 int main() {
-    return 0;
+    int res = checkPrime(5);
+	return res;
 }
