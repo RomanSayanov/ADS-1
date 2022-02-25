@@ -1,7 +1,7 @@
 // Copyright 2022 NNTU-CS
+#include <iostream>
 #include <cstdint>
 #include "alg.h"
-#include <iostream>
 
 int main() {
     return 0;
