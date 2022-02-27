@@ -11,7 +11,7 @@ bool checkPrime(uint64_t value) {
                 f = false;
                 break;
             }
-	}
+        }
     }
     if (f == true) {
         return f;
